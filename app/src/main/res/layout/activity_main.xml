@@ -4,21 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="#4D236A"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/sekwoja" />
 
     <TextView
         android:id="@+id/textViewTekstPytania"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tresc pytania"
-        android:textSize="32sp"
         android:layout_margin="8dp"
-        android:padding="8dp"
         android:background="@color/purple_200"
-        />
+        android:padding="8dp"
+        android:text="Tresc pytania"
+        android:textSize="32sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,7 +45,7 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-           android:layout_margin="16dp"
+            android:layout_margin="16dp"
             android:text="NIE" />
     </LinearLayout>
 
